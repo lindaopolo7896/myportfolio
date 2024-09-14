@@ -1,0 +1,519 @@
+@keyframes rotate360 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fadeInMove {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+*{
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+
+}
+
+/*HOME PAGE*/
+.home{
+  background-color: black;
+}
+
+header{
+  margin-top: 15px;
+}
+.navhome {
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navlinks , .sociallinks
+{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-left: 35px;
+  margin-right: 35px;
+}
+
+
+
+.navlinks a, .sociallinks a{
+  text-decoration: none;
+  color: white;
+  margin-left: 10px;
+}
+
+.navlinks a:hover, .sociallinks a:hover{
+color: goldenrod;
+}
+
+.icon{
+  color: goldenrod;
+
+}
+
+.details{
+  
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+
+
+.intro p{
+  
+  margin-top:10px;
+}
+
+ 
+
+
+.title{
+color: goldenrod;
+font-size: 20px;
+}
+
+.greeting, .msg{
+  color: gainsboro;
+}
+.name{
+  font-size: 35px;
+  flex-wrap: wrap;
+  width: 200px;
+  color: white;
+}
+
+.msg{
+  font-size: 14px;
+  flex-wrap: wrap;
+  width: 300px;
+}
+
+.contact-btn a{
+  text-decoration: none;
+  color:gainsboro;
+}
+
+.contact-btn:hover{
+  background-color: gold;
+}
+
+.contact-btn{
+  margin-top:  10px;
+  background-color: goldenrod;
+  border: none;
+  height:30px;
+  width:120px;
+  border-radius: 3px;
+}
+
+
+
+.rotate-img img{
+  width: 80%;
+  height: auto;
+  
+  animation: rotate360 5s linear infinite;
+  
+}
+
+
+/*CONTACT FORM*/
+.contact{
+  background-image: url('images/contact.avif');
+  background-size: cover;
+  overflow-x: hidden;
+}
+
+.contact h1{
+color: white;
+text-align: center;
+margin-top:50px;
+font-family: Arial, Helvetica, sans-serif;
+font-weight:900;
+margin-bottom: 10px;
+animation: fadeInMove 3s;
+}
+
+h1 span{
+  color: goldenrod;
+}
+
+.touch{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  animation: fadeInMove 1s;
+}
+
+.contact-details h4{
+  color:white;
+  
+}
+
+.contact-details{
+  display: block;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-left: 300px;
+
+}
+.formcontainer{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-right:300px;
+}
+ 
+
+
+
+h4, .map p, .mail p, .phone p {
+  color: gainsboro;
+}
+
+.p1{
+  margin-top: 10px;
+  color: gainsboro;
+}
+
+
+.map i, .mail i, .phone i{
+  color:goldenrod;
+  font-size: 20px;
+  
+}
+
+.map, .mail, .phone{
+display: flex;
+margin-top: 10px;
+}
+
+.content{
+  margin-left:10px;
+}
+h6{
+  color: gray;
+ 
+}
+
+
+
+
+.social-container{
+  margin-top: 10px;;
+}
+
+.social-media ,.icon i{
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+}
+
+.social-media:hover{
+  color: gold;
+}
+
+
+
+
+
+.subjectcontainer, .messagecontainer, .send{
+  margin-top:10px;
+}
+
+
+
+
+#name, #email, #subject{
+  border-radius: 20px;
+  border:none;
+  height: 25px;
+  background-color: rgba(0, 0, 0, 0.317);
+}
+
+#name, #email{
+  width:168px;
+}
+
+#subject{
+  width:340px;
+}
+
+#message{
+  height: 100px;
+  width: 340px;
+  background-color:rgba(0, 0, 0, 0.317); 
+  border: none;
+  border-radius: 5px;
+}
+
+.submit{
+  border: 1px goldenrod solid;
+  height: 28px;
+  border-radius: 20px;
+  width:150px;
+  background-color: rgba(0, 0, 0, 0.395);
+  color: white;
+  font-size: 10px;
+  
+}
+
+.submit:hover{
+  color:black;
+  background-color: white;
+  cursor: pointer;
+}
+::placeholder{
+  padding:5px;
+  font-size: 10px;
+}
+
+.send i{
+ 
+  background-color: goldenrod;
+  border-radius: 25px;
+  font-size: 25px;
+  
+}
+
+/*ABOUT PAGE*/
+.aboutpg{
+  background-image: url('images/about.avif');
+  background-size: cover;
+}
+
+.about{
+  display: flex;
+   
+  margin-top: 30px;
+}
+
+.profile img{
+  width:40%;
+  height: auto;
+  margin-left: 150px;
+}
+
+.contain{
+  margin-right: 200px;
+}
+
+.discover{
+  color: goldenrod;
+}
+
+.contain h1{
+  color: white;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  
+}
+
+.leftborder{
+  border-bottom: 2px goldenrod solid;
+ 
+  width:50px;
+  height: 10px;
+  
+}
+
+.rightborder{
+  border-top: 2px goldenrod solid;
+ 
+  width:50px;
+  height: 10px;
+  margin-left:450px;
+  
+}
+
+
+.inspiration{
+  margin-top: 20px;
+  color:lightgray
+}
+
+.data{
+  display: flex;
+  border: 1px goldenrod solid;
+  width:500px;
+  height: 60px;
+  margin-top: 20px;
+  border-radius: 5px;
+  padding-left: 10px;
+  padding-top: 5px;
+  
+}
+
+.data2{
+  margin-left: 80px;
+}
+
+.bdata{
+  margin-bottom: 10px;
+}
+
+.btn{
+  margin-top: 20px;
+}
+
+.cv-btn{
+  height: 35px;
+  background-color: goldenrod;
+  border: 1px goldenrod solid;
+  border-radius: 3px;
+  width: 150px;
+
+}
+
+.cv-btn a{
+  color: white;
+  text-decoration: none;
+}
+
+.cv-btn:hover{
+  background-color: black;
+}
+
+.data1 span, .data2 span{
+  color: white;
+}
+
+.data1 p, .data2 p{
+  color: darkgrey;
+}
+
+.skills{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  border-top: 1px goldenrod solid;
+  border-bottom: 1px goldenrod solid;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
+
+
+.myskill,.myint{
+  color: white;
+  text-align: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.html, .C{
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.html i, .C i {
+font-size: 30px;
+color: goldenrod;
+margin-right: 10px;
+}
+
+.html p, .C p{
+  color: aliceblue;
+}
+
+.project{
+  margin-left: 70px;
+  position: relative;
+  display: inline-block;
+}
+
+.project-btn{
+  width:150px;
+  height: 40px;
+  border: 1px goldenrod solid;
+  border-radius: 20px;
+  background-color: goldenrod;
+  color:white;
+}
+
+.project-btn:hover{
+  background-color: black;
+  color: goldenrod;
+  cursor: pointer;
+  transition: all 0.1s;
+}
+
+.dropdown-content{
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width:100px ;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a{
+  color:goldenrod;
+  padding: 12px 16px;
+  text-decoration: none;
+  display:block
+}
+
+.dropdown-content a:hover{
+  background-color: black;
+}
+
+.project:hover .dropdown-content{
+  display:block;
+
+}
+
+.interests{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.myint{
+  margin-top: 10px;
+}
+li{
+  color: darkgray;
+}
+
+#iconi{
+  color: goldenrod;
+  font-size: 30px;
+}
+
+/*large screens > 768px*/
+@media (min-width: 768px){
+  section{
+    flex: 1 1 30%;
+  }
+}
+
+/*small screens < 768px*/
+@media (max-width: 768px){
+  section{
+    flex: 1 1 45%;
+  }
+}
+
+/*smaller screens < 480px*/
+@media (max-width: 480px){
+  section{
+    flex: 1 1 100%;
+  }
+}
